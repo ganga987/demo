@@ -1,0 +1,76 @@
+
+:root{
+  --custom-font : "poppins"
+}
+
+@font-face {
+  font-family: "poppins" ;
+  src: url("../../font/Poppins-Regular.ttf");
+}
+*{
+  font-family: var(--custom-font);
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 74px 6px;
+  color: #800080;
+  font-size: 18px;
+  font-weight: 500;
+  background: #ffffff;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.align{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 5px;
+  font-weight: 900;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.option > p {
+  color: rgba(128, 0, 128, 0.25);
+  font-weight: 900;
+  font-size: 1.1rem;
+}
+
+.option > div {
+/* font-family: 'Poppins'; */
+align-items: center;
+justify-content: center;
+display: flex;
+gap: 5px;
+font-weight: 900;
+}
+
+
+@media all and (min-width: 0px) and (max-width: 768px) {
+  .nav {
+    padding: 20px 35px 6px;
+  }
+  .option > p {
+    display: none;
+  }
+  .option > div {
+    color: #ffff;
+    background: #800080;
+    padding: 10px 24px;
+    border-radius: 10px;
+    gap: 10px;
+  }
+  .option > div > img {
+    display: none;
+  }
+}
